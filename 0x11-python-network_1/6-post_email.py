@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 '''
-takes in a url and email address and sends a POSR request to passed url as email as parameter
+takes in a url and email address and sends a POSR request to
+passed url as email as parameter
 '''
 
 import requests
@@ -11,4 +12,3 @@ if __name__ == "__main__":
     payload = {'email': sys.argv[2]}
     response = requests.post(url, data=payload)
     print(response.text)
-
